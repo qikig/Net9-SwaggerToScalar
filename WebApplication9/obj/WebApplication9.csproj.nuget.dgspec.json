@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\qikig\\Documents\\feiqiu\\test-api\\WebApplication9\\WebApplication9.csproj": {}
+    "C:\\Users\\qikig\\Documents\\feiqiu\\test-api\\Net9-SwaggerToScalar\\WebApplication9\\WebApplication9.csproj": {}
   },
   "projects": {
-    "C:\\Users\\qikig\\Documents\\feiqiu\\test-api\\WebApplication9\\WebApplication9.csproj": {
+    "C:\\Users\\qikig\\Documents\\feiqiu\\test-api\\Net9-SwaggerToScalar\\WebApplication9\\WebApplication9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\qikig\\Documents\\feiqiu\\test-api\\WebApplication9\\WebApplication9.csproj",
+        "projectUniqueName": "C:\\Users\\qikig\\Documents\\feiqiu\\test-api\\Net9-SwaggerToScalar\\WebApplication9\\WebApplication9.csproj",
         "projectName": "WebApplication9",
-        "projectPath": "C:\\Users\\qikig\\Documents\\feiqiu\\test-api\\WebApplication9\\WebApplication9.csproj",
+        "projectPath": "C:\\Users\\qikig\\Documents\\feiqiu\\test-api\\Net9-SwaggerToScalar\\WebApplication9\\WebApplication9.csproj",
         "packagesPath": "C:\\Users\\qikig\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\qikig\\Documents\\feiqiu\\test-api\\WebApplication9\\obj\\",
+        "outputPath": "C:\\Users\\qikig\\Documents\\feiqiu\\test-api\\Net9-SwaggerToScalar\\WebApplication9\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,6 +62,10 @@
             "Scalar.AspNetCore": {
               "target": "Package",
               "version": "[2.7.2, )"
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[9.0.8, )"
             }
           },
           "imports": [

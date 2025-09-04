@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace WebApplication9
 {
@@ -13,7 +14,7 @@ namespace WebApplication9
         public int TemperatureC { get; set; }
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-
+        [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
         public string? Summary { get; set; }
     }
 }

@@ -2,7 +2,7 @@
   {
     "ContainingType": "WebApplication9.Controllers.WeatherForecastController",
     "Method": "Get",
-    "RelativePath": "api/WeatherForecast/Get",
+    "RelativePath": "api2/WeatherForecast/Get",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -19,10 +19,63 @@
       }
     ],
     "Tags": [
-      "\u8BF7\u6C42\u5206\u7EC4"
+      "get"
     ],
     "EndpointName": "GetWeatherForecast",
     "Description": "\u63CF\u8FF0",
     "Summary": "WeatherForecast"
+  },
+  {
+    "ContainingType": "WebApplication9.Controllers.WeatherForecastController",
+    "Method": "Test",
+    "RelativePath": "api2/WeatherForecast/Test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[WebApplication9.WeatherForecast, WebApplication9, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "get"
+    ],
+    "EndpointName": "Test",
+    "Description": "\u63CF\u8FF0",
+    "Summary": "Test"
+  },
+  {
+    "ContainingType": "WebApplication9.Controllers.WeatherForecastController",
+    "Method": "UpdateFile",
+    "RelativePath": "api2/WeatherForecast/UpdateFile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "files",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "pass",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "post"
+    ],
+    "EndpointName": "UpdateFile",
+    "Description": "\u4E0A\u4F20\u6587\u4EF6",
+    "Summary": "UpdateFile"
   }
 ]
