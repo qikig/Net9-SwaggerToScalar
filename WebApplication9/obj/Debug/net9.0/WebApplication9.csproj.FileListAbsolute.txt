@@ -83,4 +83,3 @@ C:\Users\qikig\Documents\feiqiu\test-api\Net9-SwaggerToScalar\WebApplication9\ob
 C:\Users\qikig\Documents\feiqiu\test-api\Net9-SwaggerToScalar\WebApplication9\obj\Debug\net9.0\WebApplication9.pdb
 C:\Users\qikig\Documents\feiqiu\test-api\Net9-SwaggerToScalar\WebApplication9\obj\Debug\net9.0\WebApplication9.genruntimeconfig.cache
 C:\Users\qikig\Documents\feiqiu\test-api\Net9-SwaggerToScalar\WebApplication9\obj\Debug\net9.0\ref\WebApplication9.dll
-C:\Users\qikig\Documents\feiqiu\test-api\Net9-SwaggerToScalar\WebApplication9\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

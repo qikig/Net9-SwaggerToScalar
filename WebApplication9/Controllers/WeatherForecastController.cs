@@ -27,7 +27,7 @@ namespace WebApplication9.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         [Tags("get")]
         [EndpointSummary("WeatherForecast")]
-        [EndpointDescription("描述")]
+        [EndpointDescription("浠嬬粛")]
         public IEnumerable<WeatherForecast> Get()
         {
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -41,7 +41,7 @@ namespace WebApplication9.Controllers
         [HttpGet(Name = "Test")]
         [Tags("get")]
         [EndpointSummary("Test")]
-        [EndpointDescription("描述")]
+        [EndpointDescription("娴嬭瘯浠嬬粛")]
         [AllowAnonymous]
         public IEnumerable<WeatherForecast> Test()
         {
@@ -56,9 +56,9 @@ namespace WebApplication9.Controllers
         [HttpPost(Name = "UpdateFile")]
         [Tags("post")]
         [EndpointSummary("UpdateFile")]
-        [EndpointDescription("上传文件")]
+        [EndpointDescription("涓婁紶鏂囦欢")]
         [AllowAnonymous]
-        public async Task<OkObjectResult> UpdateFile(IFormFile[] files,string pass)
+        public  OkObjectResult UpdateFile(IFormFile[] files,string pass)
         {
             if (files == null || files.Length == 0 || !"332233".Equals(pass) || string.IsNullOrWhiteSpace(pass))
             { 
@@ -86,27 +86,8 @@ namespace WebApplication9.Controllers
                         int numBytesRead = 0;
                         while (numBytesToRead > 0)
                         {
-                            //int n = bytes.Length < numBytesToRead ? bytes.Length : numBytesToRead;
-
-
-                            // 读取固定大小的数据块，例如4096字节（1个页面）
-                            int n = reader.Read(bytes, 0, bytes.Length); // 根据需要调整大小
-
-
-
-
-                            //byte[] buffer = new byte[n]; // 创建缓冲区
-                            //int bytesRead;
-                            //while ((bytesRead = sourceStream.Read(buffer, 0, buffer.Length)) > 0)
-                            //{
-                            binaryWriter.Write(bytes, 0, n); // 写入文件
-                                                                        //}
-
-                            //using (FileStream destStream = new FileStream(wpath+file.FileName, FileMode.Create, FileAccess.Write)) // 创建或覆盖目标文件流
-                            // {
-                            //      destStream.Write(bytes, 0, bytes.Length); // 将读取的数据写入目标文件流中
-                            //  }
-
+                            int n = reader.Read(bytes, 0, bytes.Length); 
+                            binaryWriter.Write(bytes, 0, n); 
                             numBytesRead += n;
                             numBytesToRead -= n;
                         }
