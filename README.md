@@ -60,3 +60,16 @@ public sealed class BearerSecuritySchemeTransformer(IAuthenticationSchemeProvide
 }
 
 ```
+builder.Services.AddOpenApi(options =>
+{
+    // Specify the OpenAPI version to use
+    options.OpenApiVersion = Microsoft.OpenApi.OpenApiSpecVersion.OpenApi3_0;
+});
+
+
+app.MapOpenApi("/scalar/{documentName}.json"); //生成json路径和名称 {documentName}默认v1 {documentName}= OpenApiVersion 
+app.MapScalarApiReference("/scalar/v1", opt => { 
+
+     opt.AddDocument("v1", "Scalar API", "/scalar/v1.json"); //对应新的openapi json路径和名称
+
+});//映射Scalar的API参考文档路径
